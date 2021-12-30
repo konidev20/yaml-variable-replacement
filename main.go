@@ -56,6 +56,6 @@ func main() {
 }
 
 func getSedExpression(findVariable string, replaceVariable string) string {
-	sedExpression := fmt.Sprintf("s/%s/%s/g", findVariable, replaceVariable)
+	sedExpression := fmt.Sprintf("s|%s|%s|g", findVariable, replaceVariable)
 	return sedExpression
 }
